@@ -40,6 +40,7 @@ public class index{
         Cancion cancion4 = new Cancion(4, "RKT Live Set MDQ", "Audio/...", "Media/...", "Media/...", artista2);
         Cancion cancion5 = new Cancion(5, "Wow", "Audio/...", "Media/...", "Media/...", artista4);
 
+
         // AGREGAR CANCIONES A LA COLECCION CANCIONES
         canciones.agregarCanciones(cancion1);
         canciones.agregarCanciones(cancion2);
@@ -64,5 +65,7 @@ public class index{
 
         canciones.mostrarCanciones();
         artistas.mostrarArtistas();
+        artistas.borrarObjeto(f2, artista10);
+        canciones.borrarObjeto(f, cancion1);
     }
 }
