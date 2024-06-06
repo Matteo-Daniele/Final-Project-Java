@@ -54,5 +54,37 @@
       "rutaMG" : "Media/...",
       "mg" : false
     } ]
+  },
+  "Acru" : {
+    "nombreArtistico" : "Acru",
+    "cancionesPropias" : [ ]
+  },
+  "Trueno" : {
+    "nombreArtistico" : "Trueno",
+    "cancionesPropias" : [ ]
+  },
+  "David Bisbal" : {
+    "nombreArtistico" : "David Bisbal",
+    "cancionesPropias" : [ ]
+  },
+  "Valeria Lynch" : {
+    "nombreArtistico" : "Valeria Lynch",
+    "cancionesPropias" : [ ]
+  },
+  "Queen" : {
+    "nombreArtistico" : "Queen",
+    "cancionesPropias" : [ ]
+  },
+  "Eladio Carrion" : {
+    "nombreArtistico" : "Eladio Carrion",
+    "cancionesPropias" : [ ]
+  },
+  "Dei V" : {
+    "nombreArtistico" : "Dei V",
+    "cancionesPropias" : [ ]
+  },
+  "Green Day" : {
+    "nombreArtistico" : "Green Day",
+    "cancionesPropias" : [ ]
   }
 }

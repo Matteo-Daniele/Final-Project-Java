@@ -10,12 +10,28 @@ public class index{
         Artista artista2 = new Artista("Aniasko");
         Artista artista3 = new Artista("Ysy A");
         Artista artista4 = new Artista("CRO");
+        Artista artista5 = new Artista("Acru");
+        Artista artista6 = new Artista("Trueno");
+        Artista artista7 = new Artista("David Bisbal");
+        Artista artista8 = new Artista("Valeria Lynch");
+        Artista artista9 = new Artista("Queen");
+        Artista artista10 = new Artista("Eladio Carrion");
+        Artista artista11 = new Artista("Dei V");
+        Artista artista12 = new Artista("Green Day");
 
         // AGREGAR ARTISTAS A LA COLECCION ARTISTAS
         artistas.agregarArtista(artista1);
         artistas.agregarArtista(artista2);
         artistas.agregarArtista(artista3);
         artistas.agregarArtista(artista4);
+        artistas.agregarArtista(artista5);
+        artistas.agregarArtista(artista6);
+        artistas.agregarArtista(artista7);
+        artistas.agregarArtista(artista8);
+        artistas.agregarArtista(artista9);
+        artistas.agregarArtista(artista10);
+        artistas.agregarArtista(artista11);
+        artistas.agregarArtista(artista12);
 
         // CANCIONES CARGA
         Cancion cancion1 = new Cancion(1, "Alas", "Audio/...", "Media/...", "Media/...", artista1);
@@ -43,8 +59,8 @@ public class index{
         File f2 = new File("zArtistas.json");
 
         // CARGAR CANCIONES Y ARTISTAS A LOS ARCHIVOS
-        canciones.cargarCancionesArchivo(f);
-        artistas.cargarArtistasArchivo(f2);
+        canciones.cargarArchivo(f);
+        artistas.cargarArchivo(f2);
 
         canciones.mostrarCanciones();
         artistas.mostrarArtistas();

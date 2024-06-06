@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-public class CollectionsCancion {
+public class CollectionsCancion implements Cargable{
     LinkedHashMap<Integer, Cancion> cancionesTotal;
 
     CollectionsCancion(){
@@ -17,17 +17,8 @@ public class CollectionsCancion {
         cancionesTotal.put(cancion.getId(), cancion);
     }
 
-    public void escribirJSON(File f) {
-        ObjectMapper bufferJson = new ObjectMapper();
-        bufferJson.enable(SerializationFeature.INDENT_OUTPUT); // Enable pretty printing
-        try {
-            bufferJson.writeValue(f, cancionesTotal);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    public void cargarCancionesArchivo(File f){
+    @Override
+    public void cargarArchivo(File f){
         ObjectMapper mapa = new ObjectMapper();
         mapa.enable(SerializationFeature.INDENT_OUTPUT);
         try{
@@ -35,6 +26,17 @@ public class CollectionsCancion {
         }
         catch(IOException e){
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void bajarArchivo(File f){
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            cancionesTotal = mapper.readValue(f, new TypeReference<LinkedHashMap<Integer, Cancion>>() {});
+            System.out.println("Datos cargados correctamente desde el archivo JSON.");
+        } catch (IOException e) {
+            System.out.println("Error al cargar los datos desde el archivo JSON: " + e.getMessage());
         }
     }
 
