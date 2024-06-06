@@ -28,6 +28,9 @@ public class CollectionsCancion implements Cargable <Cancion>{
             e.printStackTrace();
         }
     }
+    public LinkedHashMap<Integer, Cancion> getCancionesTotal() {
+        return cancionesTotal;
+    }
 
     @Override
     public void bajarArchivo(File f){

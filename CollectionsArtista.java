@@ -17,6 +17,10 @@ public class CollectionsArtista implements Cargable <Artista>{
         artistas.put(artistaAgregar.getNombreArtistico(), artistaAgregar);
     }
 
+    public LinkedHashMap<String, Artista> getArtistas() {
+        return artistas;
+    }
+
     @Override
     public void cargarArchivo(File f){
         ObjectMapper mapa = new ObjectMapper();

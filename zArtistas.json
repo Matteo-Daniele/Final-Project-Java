@@ -17,12 +17,84 @@
       "rutaPortada" : "Media/...",
       "rutaMG" : "Media/...",
       "mg" : false
+    }, {
+      "id" : 6,
+      "nombre" : "Alas",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 8,
+      "nombre" : "Rockstar",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 11,
+      "nombre" : "Alas",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 13,
+      "nombre" : "Rockstar",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 16,
+      "nombre" : "Alas",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 18,
+      "nombre" : "Rockstar",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
     } ]
   },
   "Aniasko" : {
     "nombreArtistico" : "Aniasko",
     "cancionesPropias" : [ {
       "id" : 4,
+      "nombre" : "RKT Live Set MDQ",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 9,
+      "nombre" : "RKT Live Set MDQ",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 14,
+      "nombre" : "RKT Live Set MDQ",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 19,
       "nombre" : "RKT Live Set MDQ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
@@ -41,12 +113,60 @@
       "rutaPortada" : "Media/...",
       "rutaMG" : "Media/...",
       "mg" : false
+    }, {
+      "id" : 7,
+      "nombre" : "Flechazo en el centro",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 12,
+      "nombre" : "Flechazo en el centro",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 17,
+      "nombre" : "Flechazo en el centro",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
     } ]
   },
   "CRO" : {
     "nombreArtistico" : "CRO",
     "cancionesPropias" : [ {
       "id" : 5,
+      "nombre" : "Wow",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 10,
+      "nombre" : "Wow",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 15,
+      "nombre" : "Wow",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 20,
       "nombre" : "Wow",
       "genero" : null,
       "rutaCancion" : "Audio/...",
