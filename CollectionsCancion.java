@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.LinkedHashMap;
-import java.util.TreeSet;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,6 +8,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class CollectionsCancion {
     LinkedHashMap<Integer, Cancion> cancionesTotal;
+
     CollectionsCancion(){
         this.cancionesTotal = new LinkedHashMap<>();
     }
@@ -27,16 +27,14 @@ public class CollectionsCancion {
         }
     }
 
-    public void cargarCancionesArchivo(File f) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            // Deserializar el archivo JSON en un LinkedHashMap de canciones
-            LinkedHashMap<Integer, Cancion> cancionesDesdeArchivo = objectMapper.readValue(f, new TypeReference<LinkedHashMap<Integer, Cancion>>() {});
-            // Agregar las canciones deserializadas al LinkedHashMap
-            cancionesTotal.putAll(cancionesDesdeArchivo);
-            System.out.println("Canciones cargadas correctamente desde el archivo");
-        } catch (IOException e) {
-            System.out.println("Error al cargar las canciones desde el archivo: " + e.getMessage());
+    public void cargarCancionesArchivo(File f){
+        ObjectMapper mapa = new ObjectMapper();
+        mapa.enable(SerializationFeature.INDENT_OUTPUT);
+        try{
+            mapa.writeValue(f, cancionesTotal);
+        }
+        catch(IOException e){
+            e.printStackTrace();
         }
     }
 

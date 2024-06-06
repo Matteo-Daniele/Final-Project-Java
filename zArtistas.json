@@ -1,0 +1,58 @@
+{
+  "Duki" : {
+    "nombreArtistico" : "Duki",
+    "cancionesPropias" : [ {
+      "id" : 1,
+      "nombre" : "Alas",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 3,
+      "nombre" : "Rockstar",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    } ]
+  },
+  "Aniasko" : {
+    "nombreArtistico" : "Aniasko",
+    "cancionesPropias" : [ {
+      "id" : 4,
+      "nombre" : "RKT Live Set MDQ",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    } ]
+  },
+  "Ysy A" : {
+    "nombreArtistico" : "Ysy A",
+    "cancionesPropias" : [ {
+      "id" : 2,
+      "nombre" : "Flechazo en el centro",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    } ]
+  },
+  "CRO" : {
+    "nombreArtistico" : "CRO",
+    "cancionesPropias" : [ {
+      "id" : 5,
+      "nombre" : "Wow",
+      "genero" : null,
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    } ]
+  }
+}

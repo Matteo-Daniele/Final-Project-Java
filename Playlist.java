@@ -1,9 +1,6 @@
-import java.io.File;
-import java.io.IOException;
+
 import java.util.TreeSet;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Playlist {
     String nombre;
