@@ -1,9 +1,9 @@
 import java.io.File;
-
 public class index{
     public static void main(String[] args) {
         CollectionsCancion canciones = new CollectionsCancion();
         CollectionsArtista artistas = new CollectionsArtista();
+        CollectionsPlaylist playlists = new CollectionsPlaylist();
 
         // CREAR ARTISTAS
         Artista artista1 = new Artista("Duki");
@@ -58,7 +58,17 @@ public class index{
         Cancion cancion19 = new Cancion(19, " ", "Audio/...", "Media/...", "Media/...", artista2);
         Cancion cancion20 = new Cancion(20, " ", "Audio/...", "Media/...", "Media/...", artista4);
 
-
+        // CREO PLAYLIST
+    
+        Playlist playlist1 = new Playlist("Trap");
+        playlist1.agregarCancion(cancion1);
+        playlist1.agregarCancion(cancion2);
+        playlist1.agregarCancion(cancion3);
+        playlist1.agregarCancion(cancion4);
+        playlist1.agregarCancion(cancion5);
+        
+        // AGREGAR PLAYLISTS A LA COLECCION
+        playlists.agregarPlaylist(playlist1);
 
         // AGREGAR CANCIONES A LA COLECCION CANCIONES
         canciones.agregarCanciones(cancion1); 
@@ -85,15 +95,18 @@ public class index{
         // CREAR ARCHIVOS
         File f = new File("zCanciones.json");
         File f2 = new File("zArtistas.json");
-
+        File f3 = new File("zplaylists.json");
 
         cargarListaDeArtistas(artistas, canciones);
-        // CARGAR CANCIONES Y ARTISTAS A LOS ARCHIVOS
+        // CARGAR CANCIONES, PLAYLIST Y ARTISTAS A LOS ARCHIVOS
         canciones.cargarArchivo(f);
         artistas.cargarArchivo(f2);
+        playlists.cargarArchivo(f3);
 
         canciones.mostrarCanciones();
         artistas.mostrarArtistas();
+        playlists.mostrarPlaylist();
+
         artistas.borrarObjeto(f2, artista10);
         canciones.borrarObjeto(f, cancion1);
     }

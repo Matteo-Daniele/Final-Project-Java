@@ -37,16 +37,16 @@
   },
   "6" : {
     "id" : 6,
-    "nombre" : "Alas",
+    "nombre" : "",
     "genero" : null,
-    "rutaCancion" : "Audio/...",
+    "rutaCancion" : "Audio/",
     "rutaPortada" : "Media/...",
     "rutaMG" : "Media/...",
     "mg" : false
   },
   "7" : {
     "id" : 7,
-    "nombre" : "Flechazo en el centro",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -55,7 +55,7 @@
   },
   "8" : {
     "id" : 8,
-    "nombre" : "Rockstar",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -64,7 +64,7 @@
   },
   "9" : {
     "id" : 9,
-    "nombre" : "RKT Live Set MDQ",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -73,7 +73,7 @@
   },
   "10" : {
     "id" : 10,
-    "nombre" : "Wow",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -82,7 +82,7 @@
   },
   "11" : {
     "id" : 11,
-    "nombre" : "Alas",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -91,7 +91,7 @@
   },
   "12" : {
     "id" : 12,
-    "nombre" : "Flechazo en el centro",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -100,7 +100,7 @@
   },
   "13" : {
     "id" : 13,
-    "nombre" : "Rockstar",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -109,7 +109,7 @@
   },
   "14" : {
     "id" : 14,
-    "nombre" : "RKT Live Set MDQ",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -118,7 +118,7 @@
   },
   "15" : {
     "id" : 15,
-    "nombre" : "Wow",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -127,7 +127,7 @@
   },
   "16" : {
     "id" : 16,
-    "nombre" : "Alas",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -136,7 +136,7 @@
   },
   "17" : {
     "id" : 17,
-    "nombre" : "Flechazo en el centro",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -145,7 +145,7 @@
   },
   "18" : {
     "id" : 18,
-    "nombre" : "Rockstar",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -154,7 +154,7 @@
   },
   "19" : {
     "id" : 19,
-    "nombre" : "RKT Live Set MDQ",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",
@@ -163,7 +163,7 @@
   },
   "20" : {
     "id" : 20,
-    "nombre" : "Wow",
+    "nombre" : " ",
     "genero" : null,
     "rutaCancion" : "Audio/...",
     "rutaPortada" : "Media/...",

@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.annotation.JsonBackReference;
-public class Cancion {
+
+public class Cancion implements Comparable<Cancion> {
     int id;
     String nombre;
     String genero;
@@ -107,5 +108,11 @@ public class Cancion {
         } else {
             return " Cancion-" + id + " Nombre: " + nombre + " Artista: NULL";
         }
+    }
+
+    @Override
+    public int compareTo(Cancion otraCancion) {
+        // Define el criterio de comparación. Aquí se compara por el nombre de la canción.
+        return this.nombre.compareTo(otraCancion.nombre);
     }
 }

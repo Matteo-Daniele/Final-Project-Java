@@ -1,6 +1,8 @@
 
 import java.util.TreeSet;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 
 public class Playlist {
     String nombre;
@@ -10,7 +12,25 @@ public class Playlist {
         this.nombre = nombre;
         this.cancionesPlaylist = new TreeSet<>();
     }
+
     
+    @JsonManagedReference
+    public TreeSet<Cancion> getCancionesPlaylist() {
+        return cancionesPlaylist;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setCancionesPlaylist(TreeSet<Cancion> cancionesPlaylist) {
+        this.cancionesPlaylist = cancionesPlaylist;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public void agregarCancion(Cancion cancion){
         cancionesPlaylist.add(cancion);
     }
@@ -27,5 +47,9 @@ public class Playlist {
         catch(Exception e){
             System.out.println(e.getMessage());
         }    
+    }
+    @Override
+    public String toString() {
+        return " Playlist: " + nombre;
     }
 }

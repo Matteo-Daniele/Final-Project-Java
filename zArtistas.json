@@ -19,15 +19,15 @@
       "mg" : false
     }, {
       "id" : 6,
-      "nombre" : "Alas",
+      "nombre" : "",
       "genero" : null,
-      "rutaCancion" : "Audio/...",
+      "rutaCancion" : "Audio/",
       "rutaPortada" : "Media/...",
       "rutaMG" : "Media/...",
       "mg" : false
     }, {
       "id" : 8,
-      "nombre" : "Rockstar",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -35,7 +35,7 @@
       "mg" : false
     }, {
       "id" : 11,
-      "nombre" : "Alas",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -43,7 +43,7 @@
       "mg" : false
     }, {
       "id" : 13,
-      "nombre" : "Rockstar",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -51,7 +51,7 @@
       "mg" : false
     }, {
       "id" : 16,
-      "nombre" : "Alas",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -59,7 +59,7 @@
       "mg" : false
     }, {
       "id" : 18,
-      "nombre" : "Rockstar",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -79,7 +79,7 @@
       "mg" : false
     }, {
       "id" : 9,
-      "nombre" : "RKT Live Set MDQ",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -87,7 +87,7 @@
       "mg" : false
     }, {
       "id" : 14,
-      "nombre" : "RKT Live Set MDQ",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -95,7 +95,7 @@
       "mg" : false
     }, {
       "id" : 19,
-      "nombre" : "RKT Live Set MDQ",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -115,7 +115,7 @@
       "mg" : false
     }, {
       "id" : 7,
-      "nombre" : "Flechazo en el centro",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -123,7 +123,7 @@
       "mg" : false
     }, {
       "id" : 12,
-      "nombre" : "Flechazo en el centro",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -131,7 +131,7 @@
       "mg" : false
     }, {
       "id" : 17,
-      "nombre" : "Flechazo en el centro",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -151,7 +151,7 @@
       "mg" : false
     }, {
       "id" : 10,
-      "nombre" : "Wow",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -159,7 +159,7 @@
       "mg" : false
     }, {
       "id" : 15,
-      "nombre" : "Wow",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",
@@ -167,7 +167,7 @@
       "mg" : false
     }, {
       "id" : 20,
-      "nombre" : "Wow",
+      "nombre" : " ",
       "genero" : null,
       "rutaCancion" : "Audio/...",
       "rutaPortada" : "Media/...",

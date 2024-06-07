@@ -51,7 +51,7 @@ public class CollectionsCancion implements Cargable <Cancion>{
             // Cargar los datos del archivo JSON en el LinkedHashMap
             cancionesTotal = mapper.readValue(f, new TypeReference<LinkedHashMap<Integer, Cancion>>() {});
         
-            // Eliminar el artista del LinkedHashMap
+            // Eliminar la cancion del LinkedHashMap
             cancionesTotal.remove(cancion.getId());
         
             // Guardar los datos actualizados en el archivo JSON
