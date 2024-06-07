@@ -10,8 +10,6 @@ public class Cancion implements Comparable<Cancion> {
     Artista artista;
     Boolean MG;
 
-    CollectionsCancion coleccion = new CollectionsCancion();
-
     public Cancion(int id, String nombre, String rutaCancion, String rutaPortada, String rutaMG, Artista artista) {
         this.id = id;
         this.nombre = nombre;
@@ -20,7 +18,6 @@ public class Cancion implements Comparable<Cancion> {
         this.rutaMG = rutaMG;
         this.MG = false;
         this.artista = artista;
-        coleccion.agregarCanciones(this);
     }
 
     public Cancion() {

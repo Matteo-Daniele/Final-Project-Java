@@ -1,4 +1,13 @@
 {
+  "1" : {
+    "id" : 1,
+    "nombre" : "Alas",
+    "genero" : null,
+    "rutaCancion" : "Audio/...",
+    "rutaPortada" : "Media/...",
+    "rutaMG" : "Media/...",
+    "mg" : false
+  },
   "2" : {
     "id" : 2,
     "nombre" : "Flechazo en el centro",

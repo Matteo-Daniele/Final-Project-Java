@@ -106,9 +106,6 @@ public class index{
         canciones.mostrarCanciones();
         artistas.mostrarArtistas();
         playlists.mostrarPlaylist();
-
-        artistas.borrarObjeto(f2, artista10);
-        canciones.borrarObjeto(f, cancion1);
     }
 
     public static void cargarListaDeArtistas(CollectionsArtista artistas, CollectionsCancion canciones){
