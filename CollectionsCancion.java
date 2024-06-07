@@ -16,6 +16,9 @@ public class CollectionsCancion implements Cargable <Cancion>{
     public void agregarCanciones(Cancion cancion){
         cancionesTotal.put(cancion.getId(), cancion);
     }
+    public void borrarCancion(Cancion cancion){
+        cancionesTotal.put(cancion.getId(), cancion);
+    }
 
     @Override
     public void cargarArchivo(File f){
@@ -64,14 +67,49 @@ public class CollectionsCancion implements Cargable <Cancion>{
     }
 }
 
-    public void mostrarCanciones() {
-        if (cancionesTotal.isEmpty()) {
-            System.out.println("No hay canciones en la colección.");
+public void modificarArchivo(File f, Cancion cancion, String nombre, String genero, String rutaCancion, String rutaPortada, Playlist playlist, CollectionsPlaylist playlists, File fp) {
+    try {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        
+        // Leer el archivo JSON y cargar los datos en el LinkedHashMap
+        LinkedHashMap<Integer, Cancion> loadedPlaylists = mapper.readValue(f, new TypeReference<LinkedHashMap<Integer, Cancion>>() {});
+        
+        // Actualizar la playlist en la colección de playlists
+        Cancion cancionAModificar = loadedPlaylists.get(cancion.getId());
+        if (cancionAModificar != null) {
+            if(nombre != null){cancionAModificar.setNombre(nombre);}
+            if(genero != null){cancionAModificar.setGenero(genero);}
+            if(rutaCancion != null){cancionAModificar.setRutaCancion(rutaCancion);}
+            if(rutaPortada != null){cancionAModificar.setRutaPortada(rutaPortada);}
+            playlist.eliminarCancion(cancion);
+            playlist.agregarCancion(cancionAModificar);
+            loadedPlaylists.put(cancionAModificar.getId(), cancionAModificar);
+            playlists.cargarArchivo(fp);
+
         } else {
-            System.out.println("Lista de canciones:");
-            for (Cancion cancion : cancionesTotal.values()) {
-                System.out.println(cancion);
-            }
+            System.out.println("La playlist a modificar no se encontró en el archivo JSON.");
+            return;
         }
+        mapper.writeValue(f, loadedPlaylists);
+        
+        System.out.println("Playlist modificada correctamente en el archivo JSON.");
+    } catch (IOException e) {
+        System.out.println("Error al modificar la Playlist: " + e.getMessage());
     }
+}
+
+public void mostrarCanciones(File f) {
+    ObjectMapper mapper = new ObjectMapper();
+    try {
+        cancionesTotal = mapper.readValue(f, new TypeReference<LinkedHashMap<Integer, Cancion>>() {});
+    } catch (IOException e) {
+        System.out.println("No pudieron bajarse las canciones: " + e.getMessage());
+    }
+    finally{
+        for(Cancion aux : cancionesTotal.values()){
+            System.out.println(" Canciones: " + aux.getNombre());
+    }
+    }
+}
 }

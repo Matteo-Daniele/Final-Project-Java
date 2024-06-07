@@ -7,13 +7,17 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 public class Playlist {
     String nombre;
     TreeSet<Cancion> cancionesPlaylist;
-
+    int id;
+    
     public Playlist(String nombre) {
         this.nombre = nombre;
         this.cancionesPlaylist = new TreeSet<>();
     }
 
-    
+    Playlist(){
+
+    }
+
     @JsonManagedReference
     public TreeSet<Cancion> getCancionesPlaylist() {
         return cancionesPlaylist;
@@ -48,6 +52,7 @@ public class Playlist {
             System.out.println(e.getMessage());
         }    
     }
+    
     @Override
     public String toString() {
         return " Playlist: " + nombre;

@@ -1,28 +1,39 @@
-import java.io.IOException;
-import java.util.ArrayList;
-import java.io.File;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-public class CollectionsPlaylist implements Cargable<Playlist>{
-    ArrayList<Playlist> playlists;
+import java.io.File;
+import java.io.IOException;
+import java.util.LinkedHashMap;
 
-    CollectionsPlaylist(){
-        this.playlists = new ArrayList<>();
-    }
-    public void agregarPlaylist(Playlist playlist){
-        playlists.add(playlist);
+public class CollectionsPlaylist implements Cargable<Playlist> {
+    LinkedHashMap<String, Playlist> playlists;
+
+    public CollectionsPlaylist() {
+        this.playlists = new LinkedHashMap<>();
     }
 
-    public void mostrarPlaylist(){
-        for(Playlist aux : playlists){
-            System.out.println(aux.toString());
+    public void agregarPlaylist(Playlist playlist) {
+        playlists.put(playlist.getNombre(), playlist);
+    }
+
+    public void mostrarPlaylist(File f) {
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            playlists = mapper.readValue(f, new TypeReference<LinkedHashMap<String, Playlist>>() {});
+        } catch (IOException e) {
+            System.out.println("No pudieron bajarse las Playlist: " + e.getMessage());
         }
+        finally{
+            for(Playlist aux : playlists.values()){
+                System.out.println(" Playlist: " + aux.getNombre());
+        }
+        }
+        
     }
+
     @Override
-    public void cargarArchivo(File f){
+    public void cargarArchivo(File f) {
         ObjectMapper mapa = new ObjectMapper();
         mapa.enable(SerializationFeature.INDENT_OUTPUT);
         try {
@@ -33,10 +44,11 @@ public class CollectionsPlaylist implements Cargable<Playlist>{
     }
 
     @Override
-    public void bajarArchivo(File f){
+    public void bajarArchivo(File f) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            playlists = mapper.readValue(f, new TypeReference<ArrayList<Playlist>>(){});
+            playlists = mapper.readValue(f, new TypeReference<LinkedHashMap<String, Playlist>>() {
+            });
         } catch (IOException e) {
             System.out.println("No pudieron bajarse las Playlist: " + e.getMessage());
         }
@@ -48,18 +60,48 @@ public class CollectionsPlaylist implements Cargable<Playlist>{
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             // Cargar los datos del archivo JSON en el LinkedHashMap
-            playlists = mapper.readValue(f, new TypeReference<ArrayList<Playlist>>(){});
-            // Eliminar la playlist del arraylist
-            playlists.remove(playlist);
+            this.playlists = mapper.readValue(f, new TypeReference<LinkedHashMap<String, Playlist>>() {});
+        
+            // Eliminar la cancion del LinkedHashMap
+            this.playlists.remove(playlist.getNombre());
         
             // Guardar los datos actualizados en el archivo JSON
-            mapper.writeValue(f, playlists);
+            mapper.writeValue(f, this.playlists);
         
-            System.out.println("Playlist eliminada correctamente del archivo JSON.");
+            System.out.println("Cancion eliminada correctamente del archivo JSON.");
          } 
     catch (IOException e) {
-        System.out.println("Error al eliminar la playlist del archivo JSON: " + e.getMessage());
+        System.out.println("Error al eliminar la cancion del archivo JSON: " + e.getMessage());
     }
 }
 
+public void modificarArchivo(File f, Playlist playlist, String nombre) {
+    try {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        
+        // Leer el archivo JSON y cargar los datos en el LinkedHashMap
+        LinkedHashMap<String, Playlist> loadedPlaylists = mapper.readValue(f, new TypeReference<LinkedHashMap<String, Playlist>>() {});
+        
+        // Obtener la playlist a modificar
+        Playlist playlistToUpdate = loadedPlaylists.get(playlist.getNombre());
+        if (playlistToUpdate != null) {
+            // Actualizar el nombre de la playlist
+            playlistToUpdate.setNombre(nombre);
+            // Remover la playlist anterior del mapa
+            loadedPlaylists.remove(playlist.getNombre());
+            // Agregar la playlist actualizada al mapa
+            loadedPlaylists.put(nombre, playlistToUpdate);
+            // Escribir todo el LinkedHashMap (con la playlist actualizada) de vuelta al archivo
+            mapper.writeValue(f, loadedPlaylists);
+            System.out.println("Playlist modificada correctamente en el archivo JSON.");
+        } else {
+            System.out.println("La playlist a modificar no se encontró en el archivo JSON.");
+        }
+    } catch (IOException e) {
+        System.out.println("Error al modificar la Playlist: " + e.getMessage());
+    }
+    
 }
+} 
+

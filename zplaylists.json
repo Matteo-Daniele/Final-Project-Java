@@ -1,44 +1,66 @@
-[ {
-  "nombre" : "Trap",
-  "cancionesPlaylist" : [ {
-    "id" : 1,
-    "nombre" : "Alas",
-    "genero" : null,
-    "rutaCancion" : "Audio/...",
-    "rutaPortada" : "Media/...",
-    "rutaMG" : "Media/...",
-    "mg" : false
-  }, {
-    "id" : 2,
-    "nombre" : "Flechazo en el centro",
-    "genero" : null,
-    "rutaCancion" : "Audio/...",
-    "rutaPortada" : "Media/...",
-    "rutaMG" : "Media/...",
-    "mg" : false
-  }, {
-    "id" : 4,
-    "nombre" : "RKT Live Set MDQ",
-    "genero" : null,
-    "rutaCancion" : "Audio/...",
-    "rutaPortada" : "Media/...",
-    "rutaMG" : "Media/...",
-    "mg" : false
-  }, {
-    "id" : 3,
-    "nombre" : "Rockstar",
-    "genero" : null,
-    "rutaCancion" : "Audio/...",
-    "rutaPortada" : "Media/...",
-    "rutaMG" : "Media/...",
-    "mg" : false
-  }, {
-    "id" : 5,
-    "nombre" : "Wow",
-    "genero" : null,
-    "rutaCancion" : "Audio/...",
-    "rutaPortada" : "Media/...",
-    "rutaMG" : "Media/...",
-    "mg" : false
-  } ]
-} ]
+{
+  "Trap" : {
+    "nombre" : "Trap",
+    "cancionesPlaylist" : [ {
+      "id" : 2,
+      "nombre" : "Flechazo en el centro",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 4,
+      "nombre" : "RKT Live Set MDQ",
+      "genero" : "RKT",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 3,
+      "nombre" : "Rockstar",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 1,
+      "nombre" : "TEMIN",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 5,
+      "nombre" : "Wow",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    } ]
+  },
+  "juan" : {
+    "nombre" : "juan",
+    "cancionesPlaylist" : [ {
+      "id" : 10,
+      "nombre" : " ",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    }, {
+      "id" : 12,
+      "nombre" : "Juan",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : false
+    } ]
+  }
+}

@@ -2,61 +2,32 @@ import java.io.File;
 public class index{
     public static void main(String[] args) {
         CollectionsCancion canciones = new CollectionsCancion();
-        CollectionsArtista artistas = new CollectionsArtista();
         CollectionsPlaylist playlists = new CollectionsPlaylist();
 
-        // CREAR ARTISTAS
-        Artista artista1 = new Artista("Duki");
-        Artista artista2 = new Artista("Aniasko");
-        Artista artista3 = new Artista("Ysy A");
-        Artista artista4 = new Artista("CRO");
-        Artista artista5 = new Artista("Acru");
-        Artista artista6 = new Artista("Trueno");
-        Artista artista7 = new Artista("David Bisbal");
-        Artista artista8 = new Artista("Valeria Lynch");
-        Artista artista9 = new Artista("Queen");
-        Artista artista10 = new Artista("Eladio Carrion");
-        Artista artista11 = new Artista("Dei V");
-        Artista artista12 = new Artista("Green Day");
-
-        // AGREGAR ARTISTAS A LA COLECCION ARTISTAS
-        artistas.agregarArtista(artista1);
-        artistas.agregarArtista(artista2);
-        artistas.agregarArtista(artista3);
-        artistas.agregarArtista(artista4);
-        artistas.agregarArtista(artista5);
-        artistas.agregarArtista(artista6);
-        artistas.agregarArtista(artista7);
-        artistas.agregarArtista(artista8);
-        artistas.agregarArtista(artista9);
-        artistas.agregarArtista(artista10);
-        artistas.agregarArtista(artista11);
-        artistas.agregarArtista(artista12);
-
         // CANCIONES CARGA
-        Cancion cancion1 = new Cancion(1, "Alas", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion2 = new Cancion(2, "Flechazo en el centro", "Audio/...", "Media/...", "Media/...", artista3);
-        Cancion cancion3 = new Cancion(3, "Rockstar", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion4 = new Cancion(4, "RKT Live Set MDQ", "Audio/...", "Media/...", "Media/...", artista2);
-        Cancion cancion5 = new Cancion(5, "Wow", "Audio/...", "Media/...", "Media/...", artista4);
+        Cancion cancion1 = new Cancion(1, "Alas", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion2 = new Cancion(2, "Flechazo en el centro","Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion3 = new Cancion(3, "Rockstar", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion4 = new Cancion(4, "RKT Live Set MDQ", "RKT",  "Audio/...", "Media/...", "Media/...");
+        Cancion cancion5 = new Cancion(5, "Wow", "Trap", "Audio/...", "Media/...", "Media/...");
         
-        Cancion cancion6 = new Cancion(6, "", "Audio/", "Media/...", "Media/...", artista1);
-        Cancion cancion7 = new Cancion(7, " ", "Audio/...", "Media/...", "Media/...", artista3);
-        Cancion cancion8 = new Cancion(8, " ", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion9 = new Cancion(9, " ", "Audio/...", "Media/...", "Media/...", artista2);
-        Cancion cancion10 = new Cancion(10, " ", "Audio/...", "Media/...", "Media/...", artista4);
+        Cancion cancion6 = new Cancion(6, "", "Trap", "Audio/", "Media/...", "Media/...");
+        Cancion cancion7 = new Cancion(7, " ", "Trap",  "Audio/...", "Media/...", "Media/...");
+        Cancion cancion8 = new Cancion(8, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion9 = new Cancion(9, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion10 = new Cancion(10, " ", "Trap",  "Audio/...", "Media/...", "Media/...");
 
-        Cancion cancion11 = new Cancion(11, " ", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion12 = new Cancion(12, " ", "Audio/...", "Media/...", "Media/...", artista3);
-        Cancion cancion13 = new Cancion(13, " ", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion14 = new Cancion(14, " ", "Audio/...", "Media/...", "Media/...", artista2);
-        Cancion cancion15 = new Cancion(15, " ", "Audio/...", "Media/...", "Media/...", artista4);
+        Cancion cancion11 = new Cancion(11, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion12 = new Cancion(12, "Juan", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion13 = new Cancion(13, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion14 = new Cancion(14, " ","Trap",  "Audio/...", "Media/...", "Media/...");
+        Cancion cancion15 = new Cancion(15, " ", "Trap", "Audio/...", "Media/...", "Media/...");
 
-        Cancion cancion16 = new Cancion(16, " ", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion17 = new Cancion(17, " ", "Audio/...", "Media/...", "Media/...", artista3);
-        Cancion cancion18 = new Cancion(18, " ", "Audio/...", "Media/...", "Media/...", artista1);
-        Cancion cancion19 = new Cancion(19, " ", "Audio/...", "Media/...", "Media/...", artista2);
-        Cancion cancion20 = new Cancion(20, " ", "Audio/...", "Media/...", "Media/...", artista4);
+        Cancion cancion16 = new Cancion(16, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion17 = new Cancion(17, " ","Trap",  "Audio/...", "Media/...", "Media/...");
+        Cancion cancion18 = new Cancion(18, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion19 = new Cancion(19, " ", "Trap", "Audio/...", "Media/...", "Media/...");
+        Cancion cancion20 = new Cancion(20, " ", "Trap", "Audio/...", "Media/...", "Media/...");
 
         // CREO PLAYLIST
     
@@ -66,9 +37,17 @@ public class index{
         playlist1.agregarCancion(cancion3);
         playlist1.agregarCancion(cancion4);
         playlist1.agregarCancion(cancion5);
+
+        Playlist playlist2 = new Playlist("Reggaeton");
+        playlist2.agregarCancion(cancion10);
+        playlist2.agregarCancion(cancion12);
+        playlist2.agregarCancion(cancion13);
+        playlist2.agregarCancion(cancion14);
+        playlist2.agregarCancion(cancion15);
         
         // AGREGAR PLAYLISTS A LA COLECCION
         playlists.agregarPlaylist(playlist1);
+        playlists.agregarPlaylist(playlist2);
 
         // AGREGAR CANCIONES A LA COLECCION CANCIONES
         canciones.agregarCanciones(cancion1); 
@@ -94,28 +73,18 @@ public class index{
 
         // CREAR ARCHIVOS
         File f = new File("zCanciones.json");
-        File f2 = new File("zArtistas.json");
         File f3 = new File("zplaylists.json");
 
-        cargarListaDeArtistas(artistas, canciones);
         // CARGAR CANCIONES, PLAYLIST Y ARTISTAS A LOS ARCHIVOS
         canciones.cargarArchivo(f);
-        artistas.cargarArchivo(f2);
         playlists.cargarArchivo(f3);
 
-        canciones.mostrarCanciones();
-        artistas.mostrarArtistas();
-        playlists.mostrarPlaylist();
-    }
+        canciones.modificarArchivo(f, cancion1, "TEMIN", null, null, null, playlist1, playlists, f3);
 
-    public static void cargarListaDeArtistas(CollectionsArtista artistas, CollectionsCancion canciones){
-        for(Artista artista : artistas.getArtistas().values()){
-            for(Cancion cancion : canciones.getCancionesTotal().values()){
-                if(cancion.getArtista().equals(artista)){
-                    artista.agregarCancion(cancion);
-                }
-            }
-        }
+        playlists.modificarArchivo(f3, playlist2, "juan");
+
+        canciones.mostrarCanciones(f);
+        playlists.mostrarPlaylist(f3);
     }
 
 }

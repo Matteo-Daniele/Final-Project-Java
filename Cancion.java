@@ -7,17 +7,19 @@ public class Cancion implements Comparable<Cancion> {
     String rutaCancion;
     String rutaPortada;
     String rutaMG;
-    Artista artista;
     Boolean MG;
 
-    public Cancion(int id, String nombre, String rutaCancion, String rutaPortada, String rutaMG, Artista artista) {
+    @JsonBackReference
+    Playlist playlist;
+
+    public Cancion(int id, String nombre, String genero, String rutaCancion, String rutaPortada, String rutaMG) {
         this.id = id;
         this.nombre = nombre;
+        this.genero = genero;
         this.rutaCancion = rutaCancion;
         this.rutaPortada = rutaPortada;
         this.rutaMG = rutaMG;
         this.MG = false;
-        this.artista = artista;
     }
 
     public Cancion() {
@@ -79,15 +81,6 @@ public class Cancion implements Comparable<Cancion> {
         this.rutaPortada = rutaPortada;
     }
 
-    @JsonBackReference
-    public Artista getArtista() {
-        return artista;
-    }
-
-    public void setArtista(Artista artista) {
-        this.artista = artista;
-    }
-
     public void likeOrDislike() {
         if (MG == false) {
             rutaMG = "media/like.png";
@@ -100,11 +93,9 @@ public class Cancion implements Comparable<Cancion> {
 
     @Override
     public String toString() {
-        if (artista != null) {
-            return " Cancion-" + id + " Nombre: " + nombre + " Artista: " + artista.toString();
-        } else {
-            return " Cancion-" + id + " Nombre: " + nombre + " Artista: NULL";
-        }
+        
+        return " Cancion-" + id + " Nombre: " + nombre;
+
     }
 
     @Override
