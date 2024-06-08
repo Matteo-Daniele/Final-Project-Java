@@ -7,7 +7,7 @@ public class Cancion implements Comparable<Cancion> {
     String rutaCancion;
     String rutaPortada;
     String rutaMG;
-    Boolean MG;
+    int MG;
 
     @JsonBackReference
     Playlist playlist;
@@ -19,7 +19,7 @@ public class Cancion implements Comparable<Cancion> {
         this.rutaCancion = rutaCancion;
         this.rutaPortada = rutaPortada;
         this.rutaMG = rutaMG;
-        this.MG = false;
+        this.MG = 0;
     }
 
     public Cancion() {
@@ -33,7 +33,7 @@ public class Cancion implements Comparable<Cancion> {
         return genero;
     }
 
-    public Boolean getMG() {
+    public int getMG() {
         return MG;
     }
 
@@ -61,8 +61,8 @@ public class Cancion implements Comparable<Cancion> {
         this.id = id;
     }
 
-    public void setMG(Boolean mG) {
-        MG = mG;
+    public void setMG(int mG) {
+        this.MG = mG;
     }
 
     public void setNombre(String nombre) {
@@ -81,26 +81,18 @@ public class Cancion implements Comparable<Cancion> {
         this.rutaPortada = rutaPortada;
     }
 
-    public void likeOrDislike() {
-        if (MG == false) {
-            rutaMG = "media/like.png";
-            MG = true;
-        } else {
-            rutaMG = "media/dislike.png";
-            MG = false;
-        }
-    }
-
     @Override
     public String toString() {
-        
         return " Cancion-" + id + " Nombre: " + nombre;
-
     }
 
     @Override
     public int compareTo(Cancion otraCancion) {
         // Define el criterio de comparación. Aquí se compara por el nombre de la canción.
         return this.nombre.compareTo(otraCancion.nombre);
+    }
+
+    public void addLike(){
+        this.MG++;
     }
 }
