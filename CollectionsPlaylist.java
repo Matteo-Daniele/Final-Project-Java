@@ -82,17 +82,19 @@ public void modificarArchivo(File f, Playlist playlist, String nombre) {
         
         // Leer el archivo JSON y cargar los datos en el LinkedHashMap
         LinkedHashMap<String, Playlist> loadedPlaylists = mapper.readValue(f, new TypeReference<LinkedHashMap<String, Playlist>>() {});
-        
+        System.out.println(loadedPlaylists.toString());
         // Obtener la playlist a modificar
         Playlist playlistToUpdate = loadedPlaylists.get(playlist.getNombre());
+        System.out.println(playlistToUpdate.toString());
         if (playlistToUpdate != null) {
             // Actualizar el nombre de la playlist
             playlistToUpdate.setNombre(nombre);
             // Remover la playlist anterior del mapa
             loadedPlaylists.remove(playlist.getNombre());
             // Agregar la playlist actualizada al mapa
+            System.out.println(playlistToUpdate.toString());
             loadedPlaylists.put(nombre, playlistToUpdate);
-            // Escribir todo el LinkedHashMap (con la playlist actualizada) de vuelta al archivo
+            System.out.println(loadedPlaylists.toString());
             mapper.writeValue(f, loadedPlaylists);
             System.out.println("Playlist modificada correctamente en el archivo JSON.");
         } else {

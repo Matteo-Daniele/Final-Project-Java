@@ -112,4 +112,33 @@ public void mostrarCanciones(File f) {
     }
     }
 }
+
+    public void addLikeSong(File f, Cancion cancion, Playlist playlist, CollectionsPlaylist playlists, File fp) {
+        try{
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+            // Leer el archivo JSON y cargar los datos en el LinkedHashMap
+            LinkedHashMap<Integer, Cancion> loadedPlaylists = mapper.readValue(f, new TypeReference<LinkedHashMap<Integer, Cancion>>() {});
+
+            // Actualizar la playlist en la colección de playlists
+            Cancion cancionAModificar = loadedPlaylists.get(cancion.getId());
+            System.out.println(cancion.toString());
+            System.out.println(cancionAModificar.toString());
+            if (cancionAModificar != null) {
+                cancionAModificar.addLike();
+                playlist.eliminarCancion(cancion);
+                playlist.agregarCancion(cancionAModificar);
+                loadedPlaylists.put(cancionAModificar.getId(), cancionAModificar);
+                playlists.agregarPlaylist(playlist);
+                playlists.cargarArchivo(fp);
+            } else {
+                System.out.println("La cancion que le quieres dar like no se encontró en el archivo JSON.");
+                return;
+            }
+            mapper.writeValue(f, loadedPlaylists);
+        } catch (IOException e) {
+            System.out.println("Error al dar like a la cancion: " + e.getMessage());
+        }
+    }
 }
