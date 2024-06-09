@@ -97,10 +97,9 @@ public void modificarArchivo(File f, Playlist playlist, String nombre) {
             System.out.println(loadedPlaylists.toString());
             mapper.writeValue(f, loadedPlaylists);
             System.out.println("Playlist modificada correctamente en el archivo JSON.");
-        } else {
-            System.out.println("La playlist a modificar no se encontró en el archivo JSON.");
         }
-    } catch (IOException e) {
+    } 
+    catch (IOException e) {
         System.out.println("Error al modificar la Playlist: " + e.getMessage());
     }
     

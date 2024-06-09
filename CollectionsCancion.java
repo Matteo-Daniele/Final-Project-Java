@@ -132,10 +132,8 @@ public void mostrarCanciones(File f) {
                 loadedPlaylists.put(cancionAModificar.getId(), cancionAModificar);
                 playlists.agregarPlaylist(playlist);
                 playlists.cargarArchivo(fp);
-            } else {
-                System.out.println("La cancion que le quieres dar like no se encontró en el archivo JSON.");
-                return;
-            }
+            } 
+           
             mapper.writeValue(f, loadedPlaylists);
         } catch (IOException e) {
             System.out.println("Error al dar like a la cancion: " + e.getMessage());

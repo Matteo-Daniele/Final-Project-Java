@@ -2,14 +2,6 @@
   "Trap" : {
     "nombre" : "Trap",
     "cancionesPlaylist" : [ {
-      "id" : 1,
-      "nombre" : "Alas",
-      "genero" : "Trap",
-      "rutaCancion" : "Audio/...",
-      "rutaPortada" : "Media/...",
-      "rutaMG" : "Media/...",
-      "mg" : 1
-    }, {
       "id" : 2,
       "nombre" : "Flechazo en el centro",
       "genero" : "Trap",
@@ -41,10 +33,18 @@
       "rutaPortada" : "Media/...",
       "rutaMG" : "Media/...",
       "mg" : 0
+    }, {
+      "id" : 1,
+      "nombre" : "matteo",
+      "genero" : "Trap",
+      "rutaCancion" : "Audio/...",
+      "rutaPortada" : "Media/...",
+      "rutaMG" : "Media/...",
+      "mg" : 1
     } ]
   },
-  "Reggaeton" : {
-    "nombre" : "Reggaeton",
+  "juan" : {
+    "nombre" : "juan",
     "cancionesPlaylist" : [ {
       "id" : 10,
       "nombre" : " ",
