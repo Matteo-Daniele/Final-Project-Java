@@ -1,0 +1,182 @@
+{
+  "1" : {
+    "id" : 1,
+    "nombre" : "matteo",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 1
+  },
+  "2" : {
+    "id" : 2,
+    "nombre" : "Flechazo en el centro",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "3" : {
+    "id" : 3,
+    "nombre" : "Rockstar",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "4" : {
+    "id" : 4,
+    "nombre" : "RKT Live Set MDQ",
+    "genero" : "RKT",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "5" : {
+    "id" : 5,
+    "nombre" : "Wow",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "6" : {
+    "id" : 6,
+    "nombre" : "",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "7" : {
+    "id" : 7,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "8" : {
+    "id" : 8,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "9" : {
+    "id" : 9,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "10" : {
+    "id" : 10,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "11" : {
+    "id" : 11,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "12" : {
+    "id" : 12,
+    "nombre" : "Juan",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "13" : {
+    "id" : 13,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "14" : {
+    "id" : 14,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "15" : {
+    "id" : 15,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "16" : {
+    "id" : 16,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "17" : {
+    "id" : 17,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "18" : {
+    "id" : 18,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "19" : {
+    "id" : 19,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  },
+  "20" : {
+    "id" : 20,
+    "nombre" : " ",
+    "genero" : "Trap",
+    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaPortada" : "Media/ACRU.jpg",
+    "rutaMG" : "Media/...",
+    "mg" : 0
+  }
+}

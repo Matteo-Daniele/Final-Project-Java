@@ -32,6 +32,14 @@ public class CollectionsPlaylist implements Cargable<Playlist> {
         
     }
 
+    public LinkedHashMap<String, Playlist> getPlaylists() {
+        return playlists;
+    }
+
+    public void setPlaylists(LinkedHashMap<String, Playlist> playlists) {
+        this.playlists = playlists;
+    }
+
     @Override
     public void cargarArchivo(File f) {
         ObjectMapper mapa = new ObjectMapper();

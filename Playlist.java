@@ -7,10 +7,12 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 public class Playlist {
     String nombre;
     TreeSet<Cancion> cancionesPlaylist;
+    private String portada;
     int id;
     
-    public Playlist(String nombre) {
+    public Playlist(String nombre, String portada) {
         this.nombre = nombre;
+        this.portada = portada;
         this.cancionesPlaylist = new TreeSet<>();
     }
 
@@ -23,6 +25,14 @@ public class Playlist {
         return cancionesPlaylist;
     }
 
+    public String getPortada() {
+        return portada;
+    }
+
+    public void setPortada(String portada) {
+        this.portada = portada;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -30,6 +40,7 @@ public class Playlist {
     public void setCancionesPlaylist(TreeSet<Cancion> cancionesPlaylist) {
         this.cancionesPlaylist = cancionesPlaylist;
     }
+
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
