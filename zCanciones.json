@@ -5,8 +5,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 1
+    "rutaMG" : "Media/..."
   },
   "2" : {
     "id" : 2,
@@ -14,8 +13,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "3" : {
     "id" : 3,
@@ -23,8 +21,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "4" : {
     "id" : 4,
@@ -32,8 +29,7 @@
     "genero" : "RKT",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "5" : {
     "id" : 5,
@@ -41,8 +37,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "6" : {
     "id" : 6,
@@ -50,8 +45,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "7" : {
     "id" : 7,
@@ -59,8 +53,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "8" : {
     "id" : 8,
@@ -68,8 +61,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "9" : {
     "id" : 9,
@@ -77,8 +69,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "10" : {
     "id" : 10,
@@ -86,8 +77,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "11" : {
     "id" : 11,
@@ -95,8 +85,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "12" : {
     "id" : 12,
@@ -104,8 +93,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "13" : {
     "id" : 13,
@@ -113,8 +101,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "14" : {
     "id" : 14,
@@ -122,8 +109,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "15" : {
     "id" : 15,
@@ -131,8 +117,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "16" : {
     "id" : 16,
@@ -140,8 +125,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "17" : {
     "id" : 17,
@@ -149,8 +133,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "18" : {
     "id" : 18,
@@ -158,8 +141,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "19" : {
     "id" : 19,
@@ -167,8 +149,7 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   },
   "20" : {
     "id" : 20,
@@ -176,7 +157,6 @@
     "genero" : "Trap",
     "rutaCancion" : "audio/Call-Me-Baby.wav",
     "rutaPortada" : "Media/ACRU.jpg",
-    "rutaMG" : "Media/...",
-    "mg" : 0
+    "rutaMG" : "Media/..."
   }
 }

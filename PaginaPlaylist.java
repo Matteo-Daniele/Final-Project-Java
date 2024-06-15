@@ -2,8 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 import java.util.TreeSet;
+import java.util.ArrayList;
 
 public class PaginaPlaylist extends JFrame implements ActionListener {
     private Playlist playlist;
@@ -24,9 +24,9 @@ public class PaginaPlaylist extends JFrame implements ActionListener {
 
         cancionesPanel = new JPanel(new GridLayout(0, 1)); // Layout para las canciones
 
-        // Cargar iconos
-        heartIcon = cargarIcono("Media/filled-heart-icon.png");
-        filledHeartIcon = cargarIcono("Media/heart-icon.png");
+        // Ajustar el tamaño de los iconos
+        heartIcon = cargarIcono("Media/heart-icon.png", 20, 20);
+        filledHeartIcon = cargarIcono("Media/filled-heart-icon.png", 20, 20);
 
         for (Cancion cancion : playlist.getCancionesPlaylist()) {
             JPanel cancionPanel = new JPanel(new BorderLayout());
@@ -57,14 +57,16 @@ public class PaginaPlaylist extends JFrame implements ActionListener {
         setVisible(true);
     }
 
-    private ImageIcon cargarIcono(String ruta) {
+    private ImageIcon cargarIcono(String ruta, int width, int height) {
         ImageIcon icono = new ImageIcon(ruta);
         if (icono.getImageLoadStatus() == MediaTracker.COMPLETE) {
-            System.out.println("Imagen cargada correctamente: " + ruta);
+            Image imagen = icono.getImage();
+            Image imagenEscalada = imagen.getScaledInstance(width, height, Image.SCALE_SMOOTH);
+            return new ImageIcon(imagenEscalada);
         } else {
             System.out.println("Error al cargar la imagen: " + ruta);
+            return null;
         }
-        return icono;
     }
 
     @Override

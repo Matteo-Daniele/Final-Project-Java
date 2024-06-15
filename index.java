@@ -1,11 +1,24 @@
 import javax.swing.*;
 import java.io.File;
+import java.util.Scanner;
 
 public class index {
     public static void main(String[] args) {
         CollectionsCancion canciones = new CollectionsCancion();
         CollectionsPlaylist playlists = new CollectionsPlaylist();
+        CollectionUsuarios usuarios = new CollectionUsuarios();
+        
+         // CREAR ARCHIVOS
+        File f = new File("zCanciones.json");
+        File f3 = new File("zplaylists.json");
+        File f2 = new File("Usuarios.json");
 
+        // Scanner scanner = new Scanner(System.in);
+        // usuarios.registrarUsuario(f2, scanner);
+         
+        Usuario activo = usuarios.leerArchivo(f2);
+        playlists.agregarPlaylist(activo.getTusMeGusta());
+        
         // CANCIONES CARGA
         Cancion cancion1 = new Cancion(1, "Alas", "Trap", "audio/Call-Me-Baby.wav", "Media/ACRU.jpg", "Media/...");
         Cancion cancion2 = new Cancion(2, "Flechazo en el centro", "Trap", "audio/Call-Me-Baby.wav", "Media/ACRU.jpg", "Media/...");
@@ -115,9 +128,6 @@ public class index {
         canciones.agregarCanciones(cancion19);
         canciones.agregarCanciones(cancion20);
 
-        // CREAR ARCHIVOS
-        File f = new File("zCanciones.json");
-        File f3 = new File("zplaylists.json");
 
         // CARGAR CANCIONES, PLAYLIST Y ARTISTAS A LOS ARCHIVOS
         canciones.cargarArchivo(f);

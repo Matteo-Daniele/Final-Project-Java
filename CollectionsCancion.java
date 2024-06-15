@@ -126,7 +126,6 @@ public void mostrarCanciones(File f) {
             System.out.println(cancion.toString());
             System.out.println(cancionAModificar.toString());
             if (cancionAModificar != null) {
-                cancionAModificar.addLike();
                 playlist.eliminarCancion(cancion);
                 playlist.agregarCancion(cancionAModificar);
                 loadedPlaylists.put(cancionAModificar.getId(), cancionAModificar);
