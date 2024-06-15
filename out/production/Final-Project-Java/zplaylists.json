@@ -1,0 +1,98 @@
+{
+  "Trap" : {
+    "nombre" : "Trap",
+    "cancionesPlaylist" : [ {
+      "id" : 2,
+      "nombre" : "Flechazo en el centro",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 0
+    }, {
+      "id" : 4,
+      "nombre" : "RKT Live Set MDQ",
+      "genero" : "RKT",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 0
+    }, {
+      "id" : 3,
+      "nombre" : "Rockstar",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 0
+    }, {
+      "id" : 5,
+      "nombre" : "Wow",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 0
+    }, {
+      "id" : 1,
+      "nombre" : "matteo",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 1
+    } ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "Pop" : {
+    "nombre" : "Pop",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "Regge" : {
+    "nombre" : "Regge",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "Rap" : {
+    "nombre" : "Rap",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "danu" : {
+    "nombre" : "danu",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "matteo" : {
+    "nombre" : "matteo",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "mati" : {
+    "nombre" : "mati",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "juan" : {
+    "nombre" : "juan",
+    "cancionesPlaylist" : [ {
+      "id" : 10,
+      "nombre" : " ",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 0
+    }, {
+      "id" : 12,
+      "nombre" : "Juan",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/...",
+      "mg" : 0
+    } ],
+    "portada" : "Media/ACRU.jpg"
+  }
+}
