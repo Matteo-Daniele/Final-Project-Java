@@ -10,7 +10,7 @@ public class PaginaPrincipal extends JFrame implements ActionListener {
     private JPanel playlistsPanel;
     private Playlist meGustasPlaylist;
 
-    public PaginaPrincipal(CollectionsPlaylist playlists) {
+    public PaginaPrincipal(CollectionsPlaylist playlists, Usuario activo) {
         this.playlists = playlists;
 
         // Encontrar o crear la playlist "ME GUSTAS"

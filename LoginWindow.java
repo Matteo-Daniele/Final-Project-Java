@@ -224,20 +224,18 @@ public class LoginWindow extends JFrame {
             if (password.equals(usuario.getContrasenia())) {
                 JOptionPane.showMessageDialog(this, "Inicio de sesión exitoso", "Éxito", JOptionPane.INFORMATION_MESSAGE);
                 String activo = usuario.getNickname();
+                
                 for(Usuario aux : usuarios.getUsuarios().values()){
                     if(aux.getNickname().equalsIgnoreCase(activo)){
-                        playlists.bajarArchivo(f3);
+                        Usuario activoaux = aux;
                         playlists.agregarPlaylist(aux.getTusMeGusta());
-                        playlists.cargarArchivo(f3);
+                        canciones.bajarArchivo(f);
+                        playlists.bajarArchivo(f3);
+                        SwingUtilities.invokeLater(() -> new PaginaPrincipal(playlists, activoaux));
                         break;
                     }
                 }
-        
-                canciones.bajarArchivo(f);
-                playlists.bajarArchivo(f3);
-        
-                SwingUtilities.invokeLater(() -> new PaginaPrincipal(playlists));
-
+                
             } else {
                 JOptionPane.showMessageDialog(this, "Contraseña incorrecta", "Error", JOptionPane.ERROR_MESSAGE);
                 return;

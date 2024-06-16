@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.util.TreeSet;
 import java.util.ArrayList;
 
@@ -12,8 +13,13 @@ public class PaginaPlaylist extends JFrame implements ActionListener {
     private ImageIcon heartIcon;
     private ImageIcon filledHeartIcon;
     private CollectionsPlaylist playlists;
+    private CollectionUsuarios usuarios;
 
-    public PaginaPlaylist(Playlist playlist, Playlist meGustasPlaylist, CollectionsPlaylist playlists) {
+    File f = new File("zCanciones.json");
+    File f3 = new File("zplaylists.json");
+    File f2 = new File("Usuarios.json");
+ 
+        public PaginaPlaylist(Playlist playlist, Playlist meGustasPlaylist, CollectionsPlaylist playlists) {
         this.playlist = playlist;
         this.meGustasPlaylist = meGustasPlaylist;
         this.playlists = playlists;
@@ -38,8 +44,16 @@ public class PaginaPlaylist extends JFrame implements ActionListener {
             likeButton.setActionCommand(cancion.getNombre());
             likeButton.addActionListener(e -> {
                 if (meGustasPlaylist.getCancionesPlaylist().contains(cancion)) {
+                    usuarios.leerArchivo(f2);
                     meGustasPlaylist.eliminarCancion(cancion);
                     likeButton.setIcon(heartIcon);
+                    ArrayList<Usuario>usuariosaux = new ArrayList<>();
+
+                    for(Usuario auxi : usuarios.getUsuarios().values()){
+                        usuariosaux.add(auxi);
+                    }
+                    
+                    usuarios.reescribirArchivoLinea(f2, usuariosaux);
                 } else {
                     meGustasPlaylist.agregarCancion(cancion);
                     likeButton.setIcon(filledHeartIcon);
