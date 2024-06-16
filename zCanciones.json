@@ -1,9 +1,9 @@
 {
   "1" : {
     "id" : 1,
-    "nombre" : "matteo",
+    "nombre" : "Alas",
     "genero" : "Trap",
-    "rutaCancion" : "audio/Call-Me-Baby.wav",
+    "rutaCancion" : "audio/pruebasAudio.wav",
     "rutaPortada" : "Media/ACRU.jpg",
     "rutaMG" : "Media/..."
   },

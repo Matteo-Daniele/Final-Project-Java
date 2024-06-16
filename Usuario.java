@@ -12,9 +12,8 @@ public class Usuario extends Persona{
         this.contrasenia=contrasenia;
         activo=true;
         this.mail=mail;
-        this.tusMeGusta = new Playlist("Tus me Gusta", "Media/...");
+        this.tusMeGusta = new Playlist("Tus me Gusta", "Media/MediaMG.png");
     }
-
 
     public String getContrasenia() {
         return contrasenia;

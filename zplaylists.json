@@ -1,12 +1,14 @@
 {
-  "Tus me Gusta" : {
-    "nombre" : "Tus me Gusta",
-    "cancionesPlaylist" : [ ],
-    "portada" : "Media/..."
-  },
   "Trap" : {
     "nombre" : "Trap",
     "cancionesPlaylist" : [ {
+      "id" : 1,
+      "nombre" : "Alas",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/pruebasAudio.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/..."
+    }, {
       "id" : 2,
       "nombre" : "Flechazo en el centro",
       "genero" : "Trap",
@@ -34,9 +36,21 @@
       "rutaCancion" : "audio/Call-Me-Baby.wav",
       "rutaPortada" : "Media/ACRU.jpg",
       "rutaMG" : "Media/..."
+    } ],
+    "portada" : "Media/ACRU.jpg"
+  },
+  "Reggaeton" : {
+    "nombre" : "Reggaeton",
+    "cancionesPlaylist" : [ {
+      "id" : 10,
+      "nombre" : " ",
+      "genero" : "Trap",
+      "rutaCancion" : "audio/Call-Me-Baby.wav",
+      "rutaPortada" : "Media/ACRU.jpg",
+      "rutaMG" : "Media/..."
     }, {
-      "id" : 1,
-      "nombre" : "matteo",
+      "id" : 12,
+      "nombre" : "Juan",
       "genero" : "Trap",
       "rutaCancion" : "audio/Call-Me-Baby.wav",
       "rutaPortada" : "Media/ACRU.jpg",
@@ -74,23 +88,9 @@
     "cancionesPlaylist" : [ ],
     "portada" : "Media/ACRU.jpg"
   },
-  "juan" : {
-    "nombre" : "juan",
-    "cancionesPlaylist" : [ {
-      "id" : 10,
-      "nombre" : " ",
-      "genero" : "Trap",
-      "rutaCancion" : "audio/Call-Me-Baby.wav",
-      "rutaPortada" : "Media/ACRU.jpg",
-      "rutaMG" : "Media/..."
-    }, {
-      "id" : 12,
-      "nombre" : "Juan",
-      "genero" : "Trap",
-      "rutaCancion" : "audio/Call-Me-Baby.wav",
-      "rutaPortada" : "Media/ACRU.jpg",
-      "rutaMG" : "Media/..."
-    } ],
-    "portada" : "Media/ACRU.jpg"
+  "Tus me Gusta" : {
+    "nombre" : "Tus me Gusta",
+    "cancionesPlaylist" : [ ],
+    "portada" : "Media/mglogo.jpg"
   }
 }

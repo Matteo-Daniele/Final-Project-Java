@@ -19,8 +19,8 @@ public class CollectionUsuarios {
         leerArchivo(archivo);
         System.out.println("Ingrese su nombre: ");
         String nombre = teclado.nextLine();
-        System.out.println("Ingrese su apellido: ");                     //Leo el archivo de usuarios (en caso de existir) y lo cargo en nuestro treemap para registrar en base a
-        String apellido = teclado.nextLine();                                 //el nickname de cada uno y luego lo subo linea por linea al archivo
+        System.out.println("Ingrese su apellido: ");            //Leo el archivo de usuarios (en caso de existir) y lo cargo en nuestro treemap para registrar en base a
+        String apellido = teclado.nextLine();                     //el nickname de cada uno y luego lo subo linea por linea al archivo
         String email = "";
         while (!emailValido) {
             try {
@@ -96,7 +96,7 @@ public class CollectionUsuarios {
         }
     }
 
-    public Usuario leerArchivo(File archivo) {
+    public void leerArchivo(File archivo) {
         Usuario usuario = new Usuario();
         ObjectMapper mapper = new ObjectMapper();
         if (archivo.exists()) {
@@ -113,8 +113,6 @@ public class CollectionUsuarios {
         } else {
             System.out.println("El archivo no existe");
         }
-
-        return usuario;
     }
 
     public TreeMap<String, Usuario> getUsuarios() {
