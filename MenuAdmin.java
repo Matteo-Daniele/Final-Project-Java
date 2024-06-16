@@ -50,8 +50,12 @@ public class MenuAdmin extends JFrame {
 
         // Etiqueta de logo
         JLabel logoLabel = new JLabel();
-        ImageIcon logoIcon = new ImageIcon("C:\\Users\\Damian Lupo\\Downloads\\Spotifake.png"); // Ruta al logo
-        logoLabel.setIcon(logoIcon);
+        ImageIcon logoIcon = new ImageIcon("Media/Spotifake.png"); // Ruta al logo
+        // Ajustar el tamaño del logo
+        Image logoImage2 = logoIcon.getImage();
+        Image logoImageScaled = logoImage2.getScaledInstance(50, 50, Image.SCALE_SMOOTH); // Ajustar el tamaño del logo aquí
+        ImageIcon logoIconScaled = new ImageIcon(logoImageScaled);
+        logoLabel.setIcon(logoIconScaled);
         titlePanel.add(logoLabel);
 
         gbc.gridx = 0;
@@ -63,7 +67,7 @@ public class MenuAdmin extends JFrame {
         gbc.gridwidth = 1;
 
         // Ajustar el logo para la ventana
-        ImageIcon logoIcon2 = new ImageIcon("C:\\Users\\Damian Lupo\\Downloads\\Spotifake.png");
+        ImageIcon logoIcon2 = new ImageIcon("Media/Spotifake.png");
         Image logoImage = logoIcon2.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         ImageIcon logoScaledIcon = new ImageIcon(logoImage);
 
@@ -168,7 +172,7 @@ public class MenuAdmin extends JFrame {
         mainPanel.add(scrollPane, BorderLayout.CENTER);
 
         // Agregar el logo de Spotifake como icono de la ventana
-        ImageIcon logoIcon = new ImageIcon("C:\\Users\\Damian Lupo\\Downloads\\Spotifake.png");
+        ImageIcon logoIcon = new ImageIcon("Media/Spotifake.png");
         Image logoImage = logoIcon.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         ImageIcon logoScaledIcon = new ImageIcon(logoImage);
         frame.setIconImage(logoScaledIcon.getImage());
@@ -208,7 +212,7 @@ public class MenuAdmin extends JFrame {
         mainPanel.add(scrollPane, BorderLayout.CENTER);
 
         // Cargar y establecer el logo de Spotify como icono de la ventana
-        ImageIcon logoIcon = new ImageIcon("C:\\Users\\Damian Lupo\\Downloads\\Spotifake.png"); // Reemplaza con la ruta correcta de tu archivo de imagen
+        ImageIcon logoIcon = new ImageIcon("Media/Spotifake.png"); // Reemplaza con la ruta correcta de tu archivo de imagen
         Image logoImage = logoIcon.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         ImageIcon logoScaledIcon = new ImageIcon(logoImage);
         frame.setIconImage(logoScaledIcon.getImage());

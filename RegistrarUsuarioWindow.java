@@ -36,7 +36,10 @@ public class RegistrarUsuarioWindow extends JFrame {
         // Etiqueta de logo
         JLabel logoLabel = new JLabel();
         ImageIcon logoIcon = new ImageIcon("Media/Spotifake.png"); // Ruta al logo
-        logoLabel.setIcon(logoIcon);
+        Image logoImage2 = logoIcon.getImage();
+        Image logoImageScaled = logoImage2.getScaledInstance(50, 50, Image.SCALE_SMOOTH); // Ajustar el tamaño del logo aquí
+        ImageIcon logoIconScaled = new ImageIcon(logoImageScaled);
+        logoLabel.setIcon(logoIconScaled);
         titlePanel.add(logoLabel);
 
         gbc.gridx = 0;

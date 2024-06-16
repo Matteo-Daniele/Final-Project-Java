@@ -15,19 +15,19 @@ public class PaginaPrincipal extends JFrame implements ActionListener {
 
         // Encontrar o crear la playlist "ME GUSTAS"
         meGustasPlaylist = playlists.getPlaylists().values().stream()
-                .filter(p -> "ME GUSTAS".equals(p.getNombre()))
+                .filter(p -> "Tus me Gusta".equals(p.getNombre()))
                 .findFirst()
                 .orElseGet(() -> {
-                    Playlist newPlaylist = new Playlist("ME GUSTAS", "Media/ACRU.jpg");
+                    Playlist newPlaylist = new Playlist("Tus me Gusta", "Media/ACRU.jpg");
                     playlists.agregarPlaylist(newPlaylist);
                     return newPlaylist;
                 });
 
-        setTitle("SpotiFake");
+        setTitle("Spotifake");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         // Configurar el ícono de la ventana y la barra de tareas
-        ImageIcon icono = new ImageIcon("media/iconoPrograma.png"); // Ruta del ícono
+        ImageIcon icono = new ImageIcon("Media/Spotifake.png"); // Ruta del ícono
         setIconImage(icono.getImage()); // Establecer el ícono de la ventana
 
         setLayout(new BorderLayout());

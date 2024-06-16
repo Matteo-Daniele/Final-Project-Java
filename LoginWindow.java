@@ -43,8 +43,12 @@ public class LoginWindow extends JFrame {
 
         // Etiqueta de logo
         JLabel logoLabel = new JLabel();
-        ImageIcon logoIcon = new ImageIcon("C:\\Users\\Damian Lupo\\Downloads\\Spotifake.png"); // Ruta al logo
-        logoLabel.setIcon(logoIcon);
+        ImageIcon logoIcon = new ImageIcon("Media/Spotifake.png"); // Ruta al logo
+        // Ajustar el tamaño del logo
+        Image logoImage2 = logoIcon.getImage();
+        Image logoImageScaled = logoImage2.getScaledInstance(50, 50, Image.SCALE_SMOOTH); // Ajustar el tamaño del logo aquí
+        ImageIcon logoIconScaled = new ImageIcon(logoImageScaled);
+        logoLabel.setIcon(logoIconScaled);
         titlePanel.add(logoLabel);
 
         gbc.gridx = 0;
@@ -128,7 +132,7 @@ public class LoginWindow extends JFrame {
         // Ajustar el tamaño de la ventana para que quepan todos los componentes
         pack();
         // Ajustar el logo para la ventana
-        ImageIcon logoIcon2 = new ImageIcon("C:\\Users\\Damian Lupo\\Downloads\\Spotifake.png");
+        ImageIcon logoIcon2 = new ImageIcon("Media/Spotifake.png");
         Image logoImage = logoIcon2.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
         ImageIcon logoScaledIcon = new ImageIcon(logoImage);
 
